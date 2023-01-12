@@ -6,6 +6,7 @@ import About from "./About";
 import Contact from "./Contact";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import "./index.css";
+import BigClock from "./BigClock";
 
 const router = createBrowserRouter([
   {
@@ -23,6 +24,10 @@ const router = createBrowserRouter([
       {
         path: "contact",
         element: <Contact />,
+      },
+      {
+        path: "clock/:cityKey",
+        element: <BigClock />,
       },
     ],
   },

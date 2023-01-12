@@ -19,7 +19,9 @@ function App() {
         </ul>
       </nav>
       <main className="p-8">
-        <Outlet />
+        <div className="flex justify-start md:space-x-4 md:flex-row flex-col">
+          <Outlet />
+        </div>
       </main>
     </div>
   );

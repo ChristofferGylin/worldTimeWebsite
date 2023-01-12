@@ -1,8 +1,9 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
 
 export default function Clock({ city, timeZone }) {
   const [time, setTime] = useState();
-
+  const cityLink = city.toLowerCase().replace(" ", "");
   useEffect(() => {
     setInterval(() => {
       const date = new Date();
@@ -19,7 +20,9 @@ export default function Clock({ city, timeZone }) {
       <div className="text-3xl text-gray-900 font-semibold font-mono">
         {time}
       </div>
-      <div className=" text-gray-600 underline hover:text-gray-400">bigger</div>
+      <div className=" text-gray-600 underline hover:text-gray-400">
+        <Link to={`clock/${cityLink}`}>bigger</Link>
+      </div>
     </div>
   );
 }

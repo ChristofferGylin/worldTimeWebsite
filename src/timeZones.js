@@ -5,7 +5,7 @@ export const timeZones = {
     country: "Sweden",
   },
   london: { city: "London", timeZone: "Europe/London", country: "England" },
-  newYork: { city: "New York", timeZone: "America/New_York", country: "USA" },
+  newyork: { city: "New York", timeZone: "America/New_York", country: "USA" },
   sydney: {
     city: "Sydney",
     timeZone: "Australia/Sydney",
